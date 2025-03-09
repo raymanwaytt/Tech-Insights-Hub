@@ -5,7 +5,7 @@ from datetime import datetime
 from collections import Counter
 
 # URL and headers
-url = "https://www.bbc.com/news/technology"
+url = "https://www.bbc.com/innovation/technology"
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
 
 # Fetch page
@@ -44,8 +44,15 @@ keywords = ["ai", "tech", "robotics", "quantum", "startup"]
 word_counts = Counter(" ".join(all_titles).split())
 top_keywords = {kw: word_counts[kw] for kw in keywords if kw in word_counts}
 
-# Save to CSV
+# Append to existing CSV
+file_path = "../data/bbc_news.csv" #this is the day 1 file
 df = pd.DataFrame(news_data)
-df.to_csv("../data/bbc_news.csv", index=False)
-print(f"\nSaved {len(news_data)} articles to ../data/bbc_news.csv")
+try:
+    existing_df = pd.read_csv(file_path)
+    df = pd.concat([existing_df, df]).drop_duplicates(subset=["title"])
+    print(f"Appended {len(news_data)} new articles to existing CSV")
+except FileNotFoundError:
+    print("No existing CSV")
+df.to_csv(file_path, index=False)
+print(f"\nSaved/Updated {len(df)} total articles to {file_path}")
 print(f"Top keywords: {top_keywords}")
