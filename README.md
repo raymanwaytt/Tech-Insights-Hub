@@ -7,7 +7,6 @@ Welcome to the **Tech Innovations Insights Hub**—a daily scrape-and-analyze pr
 - **Sources**:
   - **BBC**: Broad tech news from `https://www.bbc.com/innovation/technology`.
   - **Reuters**: Deep tech dives from `https://www.reuters.com/technology/`.
-  - **X**: Real-time #AI chatter from `https://x.com/search?q=%23AI&f=live`.
 - **Output**: 
   - Daily CSVs in `data/`—raw articles and posts.
   - Keywords tracked: `ai`, `tech`, `robotics`, `quantum`, `startup`...
@@ -16,13 +15,11 @@ Welcome to the **Tech Innovations Insights Hub**—a daily scrape-and-analyze pr
 
 ## Structure
 - **`data/`**:
-  - `bbc_news.csv`: 17 articles (Day 3).
-  - `reuters_news.csv`: Total of 10 articles (Day 3).
-  - `x_posts.csv`: 10 placeholder #AI posts.
+  - `bbc_news.csv`: 22 articles (Day 3).
+  - `reuters_news.csv`: Total of 20 articles (Day 3).
 - **`scripts/`**:
   - `scrape_bbc.py`: BBC scraper—titles, links, dates.
   - `scrape_reuters.py`: Reuters scraper—handles main + list articles.
-  - `scrape_x_posts.py`: X scraper—Selenium, #AI focus .
 
 ## How It Works
 1. **Scrape**: Daily runs grab articles (BBC, Reuters) and #AI posts (X).
