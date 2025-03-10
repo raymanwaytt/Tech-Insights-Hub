@@ -1,14 +1,15 @@
 Top Keywords counts
 
+7/03/2025
 
 
-7/3/2025
-
-
-8/3/2025 
+8/03/2025 
 BBC {'ai': 1, 'tech': 3, 'quantum': 1} 
-
 
 9/03/2025
 BBC {'tech': 1, 'quantum': 1}
 REUTER {'ai': 3}
+
+10/03/2025
+BBC {'tech': 1, 'quantum': 1}
+REUTER {'tech': 1}
