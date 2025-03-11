@@ -13,3 +13,7 @@ REUTER {'ai': 3}
 10/03/2025
 BBC {'tech': 1, 'quantum': 1}
 REUTER {'tech': 1}
+
+11/03/2025
+BBC {'ai': 2, 'tech': 2}
+REUTER {'ai': 4, 'tech': 1}

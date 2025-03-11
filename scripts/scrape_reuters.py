@@ -66,7 +66,7 @@ keywords = ["ai", "tech", "robotics", "quantum", "startup"]
 word_counts = Counter(" ".join([normalize_title(item["title"]) for item in news_data]).split())
 top_keywords = {kw: word_counts[kw] for kw in keywords if kw in word_counts}
 
-file_path = "../data/reuters_news.csv"
+file_path = "data/reuters_news.csv"
 df = pd.DataFrame(news_data)
 try:
     existing_df = pd.read_csv(file_path)
