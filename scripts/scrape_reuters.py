@@ -44,10 +44,10 @@ news_data.append({
     "source": "Reuters",
     "date": datetime.now().strftime("%Y-%m-%d")
 })
-print(f"Main Article: {headline}")
+print(f"Article 1: {headline}")
 
 # Other articles
-for i, each_article in enumerate(list_of_articles[1:10], 1):
+for i, each_article in enumerate(list_of_articles[1:10], 2):
     content = each_article.get_text(strip=True, separator='@').split('category', 1)[1].split('@')[1]
     content_normalized = normalize_title(content)
     link = each_article.find("a")['href']
