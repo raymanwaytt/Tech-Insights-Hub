@@ -48,7 +48,7 @@ word_counts = Counter(" ".join(all_titles).split())
 top_keywords = {kw: word_counts[kw] for kw in keywords if kw in word_counts}
 
 # Append to existing CSV
-file_path = "data\bbc_news.csv"
+file_path = "data/bbc_news.csv"
 df = pd.DataFrame(news_data)
 try:
     existing_df = pd.read_csv(file_path)
