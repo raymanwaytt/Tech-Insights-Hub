@@ -25,3 +25,7 @@ REUTER {'ai': 4}
 13/03/2025
 BBC {'tech': 3}
 REUTERS {'ai': 1}
+
+15/03/2025
+BBC {'tech': 2} 
+REUTERS  {'ai': 1}
