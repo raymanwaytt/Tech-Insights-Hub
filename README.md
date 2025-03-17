@@ -20,11 +20,12 @@ Welcome to the **Tech Innovations Insights Hub**—a daily scrape-and-analyze pr
 - **`scripts/`**:
   - `scrape_bbc.py`: BBC scraper—titles, links, dates.
   - `scrape_reuters.py`: Reuters scraper—handles main + list articles.
+  - **`top_keywords`** : Record of daily keywords count.
 
 ## How It Works
 1. **Scrape**: Daily runs grab articles (BBC, Reuters).
 2. **Store**: Append to CSVs—`title`, `link`, `source`, `date`.
-3. **Analyze**: Count keywords—e.g., Day 3: BBC (`tech: 1, quantum: 1`), Reuters (`ai: 3`) & .
+3. **Analyze**: Count keywords—e.g., Day 3: BBC (`tech: 1, quantum: 1`), Reuters (`ai: 3`) & take note.
 
 ## Tools
 - **Python**: `requests`, `BeautifulSoup`, `pandas`
