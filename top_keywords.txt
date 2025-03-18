@@ -37,3 +37,7 @@ REUTERS  {'ai': 2}
 17/03/2025
 BBC {'tech': 2} 
 REUTERS {'ai': 4, 'quantum': 1}
+
+18/03/2025
+BBC {'tech': 2} 
+REUTERS {'ai': 2, 'tech': 1, 'startup': 1}
