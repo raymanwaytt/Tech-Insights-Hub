@@ -5,8 +5,8 @@ Welcome to the **Tech Innovations Insights Hub**—a daily scrape-and-analyze pr
 ## What’s This About?
 
 - **Sources**:
-  - **BBC**: Broad tech news from `https://www.bbc.com/innovation/technology`.
-  - **Reuters**: Deep tech dives from `https://www.reuters.com/technology/`.
+  - Broad tech news from [**BBC**](https://www.bbc.com/innovation/technology).
+  - Deep tech dives from [**Reuters**](https://www.reuters.com/technology/).
 - **Output**: 
   - Daily CSVs in `data/`—raw articles and posts.
   - Keywords tracked: `ai`, `tech`, `robotics`, `quantum`, `startup`...
