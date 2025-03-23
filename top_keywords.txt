@@ -46,6 +46,14 @@ REUTERS {'ai': 2, 'tech': 1, 'startup': 1}
 BBC {'tech': 2} 
 REUTERS {'ai': 3}
 
-19/03/2025
+20/03/2025
 BBC {'tech': 2} 
 REUTERS {'ai': 4, 'quantum': 1, 'startup': 1}
+
+22/03/2025
+BBC {'tech': 2} 
+REUTERS {'ai': 3, 'robotics': 1, 'startup': 1}
+
+23/03/2025
+BBC {'tech': 2} 
+REUTERS {'ai': 2, 'robotics': 1, 'startup': 1}
